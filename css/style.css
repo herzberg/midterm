@@ -1,11 +1,108 @@
 
 /* html5 reset css file */
 @import url('html5reset.css');
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Pirata+One);
+
 
 /* standard css for desktop browsers */
 body {
-	background-color:gainsboro;
+	background-color:#FEE2C8;
 }
+
+h1{
+	font-size: 50px;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+
+header{
+	font-size: 25px;
+	float: left;
+	background: #9DB997 url('../img/sun.jpg') no-repeat bottom;
+
+    background-size: 49%;
+    width: 20%;
+    height: 600px;
+    padding: 200px 0.5em 0 0.5em;
+    clear:both;
+    position: static;
+}
+
+h3{
+	font-size: 20px;
+}
+
+body div{
+	
+	border: solid black 0px;
+}
+
+
+.intro { 
+	min-width: 470px;
+	width: 100%;
+	background-image: url("../img/swirls2.jpg");
+}
+
+.summary{
+	background-image: url("../img/beach.jpg");
+	height: 500px;
+	padding: 300px;
+	padding-left: 500px;
+	padding-bottom: 0px;
+
+	font-family: 'Amatic SC', cursive;
+	font-size: 40px;
+}
+
+.summary p{
+	background-color: #DE3CA0;
+	padding: 20px;
+}
+
+.preamble{
+	background-image: url("../img/roadtrip.jpg");
+	background-size: contain;
+	background-color: #5D3D62;
+	background-repeat: no-repeat;
+	width: 1024px;
+	height: 709px;
+	color:#111;
+	margin-top: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+	text-align: center;
+}
+
+.preamble p{
+	padding: 20px;
+	font-size: 30px;
+	color: #fff;
+	font-weight: bolder;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.preamble h3{
+	font-family: 'Kaushan Script', cursive;
+	
+	font-size: 50px;
+}
+
+#zen-explanation h3:first-child{
+	background: url("../img/clouds4.jpg");
+	padding-top: 60%;
+	text-align: right;
+	color: green;
+	padding-bottom: 5%;
+	padding-right: 30%;
+	font-size: 6em;
+	color: #567ab6;
+	font-family: 'Pirata One', cursive;
+
+}
+
 
 /* override css for mobile browsers */
 @media all and (min-width:320px) and (max-width:400px) {

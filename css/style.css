@@ -16,19 +16,6 @@ h1{
 	padding-bottom: 30px;
 }
 
-header{
-	font-size: 25px;
-	float: left;
-	background: #9DB997 url('../img/sun.jpg') no-repeat bottom;
-
-    background-size: 49%;
-    width: 20%;
-    height: 600px;
-    padding: 200px 0.5em 0 0.5em;
-    clear:both;
-    position: static;
-}
-
 h3{
 	font-size: 20px;
 }
@@ -39,51 +26,81 @@ body div{
 }
 
 
-.intro { 
-	min-width: 470px;
+header h1{
+	font-size: 3em;
+	float: left;
+	background: #3c4262;
+	color: #edcbc2 	;
+	font-family: Georgia;
+    background-size: 49%;
+    width: 20%;
+    height: 600px;
+    padding: 200px 1em 0 .5em;
+    clear:both;
+    position: static;
+}
+
+header h2{ 
 	width: 100%;
-	background-image: url("../img/swirls2.jpg");
+	background-image: url("../img/world.jpg");
+	background-size: 100% 100%;
+	height: 600px;
+	padding-top: 200px;
+	font-size: 4em;
+	color: #eef;
+	text-align: right;
 }
 
 .summary{
-	background-image: url("../img/beach.jpg");
-	height: 500px;
-	padding: 300px;
-	padding-left: 500px;
-	padding-bottom: 0px;
-
+	background-image: url("../img/taj.jpg");
+	background-size: 100% 100%;
+	height: 800px;
+	padding: 20px;
 	font-family: 'Amatic SC', cursive;
-	font-size: 40px;
+	clear:both;
+
 }
 
+
 .summary p{
-	background-color: #DE3CA0;
-	padding: 20px;
+	color: black;
+	padding: 30px;
+	padding-top: 40px;
+	font-size: 5em;
+	font-weight: bolder;
+}
+
+.summary p:first-child{
+	padding-top: 200px;
+}
+
+.summary a{
+	text-decoration: none;
+	text-shadow: none;
+	color: #555;
 }
 
 .preamble{
-	background-image: url("../img/road2.jpg");
-	
-	background-color: #5D3D62;
-	background-repeat: no-repeat;
-	height: 680px;
+	background-image: url("../img/road2g.jpg");
+	background-size: cover;
+	background-color: #000;
+	height: 800px;
 
 
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 30px;
 	text-align: center;
 	color: #fff;
-	padding-top: 400px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 }
 
+
 .preamble p{
 	padding: 20px;
-	font-size: 30px;
+	font-size: 3em;
 
 	font-weight: bolder;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .preamble h3{
@@ -91,6 +108,7 @@ body div{
 	font-size: 50px;
 }
 
+/*
 #zen-explanation h3:first-child{
 	background: url("../img/clouds4.jpg");
 	padding-top: 60%;
@@ -103,12 +121,159 @@ body div{
 	font-family: 'Pirata One', cursive;
 
 }
+*/
+
+#zen-explanation{
+	background: url("../img/tower.jpg");
+	background-size: 100% 100%;
+	height: 900px;
+	clear:both;	
+}
+
+#zen-explanation h3{
+	font-size: 3em;
+	text-align: center;
+	padding: 10px;
+}
+
+
+#zen-explanation p{
+	font-size: 2em;
+	padding: 10px;	
+}
+
+#zen-explanation p:nth-child(2){
+	text-align: justify;
+	margin-right: 60%;
+	margin-left: 2	%;
+	float: left;
+
+}
+
+#zen-explanation p:nth-child(3){
+	text-align: justify;	
+	margin-left: 60%;
+	margin-right: 2%;
+	float: right;
+	position: absolute;
+}
+
+#zen-participation{
+	background: url("../img/pyr2.jpg") no-repeat;
+	background-size: 100% 100%;
+	background-position: 0px -100px;
+	height: 900px;
+	clear:both;	
+}
+
+#zen-participation h3{
+	font-size: 4em;
+	text-align: center;
+	padding: 10px;
+	padding-top: 50px;
+}
+
+
+#zen-participation p{
+	font-size: 1em;
+	padding: 10px;	
+	text-align: center;
+	color: black;
+	font-weight: bolder;
+}
+
+#zen-participation p:nth-child(2){
+	text-align: justify;
+	margin-right: 30%;
+	margin-left: 45%;
+	margin-top: 5%;
+}
+
+#zen-participation p:nth-child(3){
+	text-align: justify;	
+	margin-right: 20%;
+	margin-left: 25%;	
+}
+
+#zen-participation p:nth-child(4){
+	text-align: justify;	
+	margin-right: 10%;
+	margin-left: 15%;	
+}
+
+@media all and (max-width:900px) and (min-width:600px) {
+	.summary p{
+		font-size: 3em;
+	}
+
+	.preamble{
+		padding-top: 10px;
+	}
+	.preamble p{
+		font-size: 1.7em;
+	}
+
+	#zen-explanation p{
+		font-size: 1.7em;
+	}
+}
+
+
+@media all and (max-width:600px) and (min-width:400px) {
+	.summary p{
+		font-size: 3em;
+	}
+
+	.preamble{
+		padding-top: 10px;
+	}
+	.preamble p{
+		font-size: 1.7em;
+	}
+
+	#zen-explanation p{
+		font-size: 1.25em;
+	}
+
+	header h1{
+		font-size: 2em;
+	}
+}
 
 
 /* override css for mobile browsers */
-@media all and (min-width:320px) and (max-width:400px) {
+@media all and (max-width:400px) {
 	body {
 		font-size:1em;
-		background-color:orange;
+	}
+
+	.summary p{
+		font-size: 2em;
+	}
+	.preamble p{
+		font-size: 1em;
+	}
+
+	#zen-explanation p{
+		font-size: .8em;
+	}
+
+
+	header h1{
+		font-size: 3em;
+	    width: 100%;
+	    height: 200px;
+	    padding: 100px 0.5em 0 0.5em;
+	}
+
+	header h2{ 
+		width: 100%;
+		background-image: url("../img/world.jpg");
+		background-size: 100% 100%;
+		height: 600px;
+		font-size: 4em;
+		color: #eef;
+		text-align: center;
+		clear:both;
 	}
 }

@@ -7,7 +7,21 @@
 
 /* standard css for desktop browsers */
 body {
-	background-color:#FEE2C8;
+	background-image: url("../img/clouds5.jpg");
+	background-color:#37f;
+
+}
+
+.extra1 {
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    margin-left: -160px;
+    z-index: 10;
+    background-image: url('../img/plane3.gif');
+    height: 300px;
+    width: 300px;
+    background-size: 100% 100%;
 }
 
 h1{
@@ -23,6 +37,11 @@ h3{
 body div{
 	
 	border: solid black 0px;
+}
+
+header{
+	z-index: 12;
+	position: relative;
 }
 
 
@@ -41,6 +60,7 @@ header h1{
 }
 
 header h2{ 
+	z-index: 300;
 	width: 100%;
 	background-image: url("../img/world.jpg");
 	background-size: 100% 100%;
@@ -52,13 +72,15 @@ header h2{
 }
 
 .summary{
+	margin-top: 70%;
 	background-image: url("../img/taj.jpg");
 	background-size: 100% 100%;
 	height: 800px;
 	padding: 20px;
 	font-family: 'Amatic SC', cursive;
 	clear:both;
-
+	z-index: 12;
+	position: relative;
 }
 
 
@@ -80,11 +102,15 @@ header h2{
 	color: #555;
 }
 
+
 .preamble{
 	background-image: url("../img/road2g.jpg");
-	background-size: cover;
+	background-size: 100% 100%;
 	background-color: #000;
+	margin-top: 50%;
 	height: 800px;
+	z-index: 12;
+	position: relative;
 
 
 	margin-left: auto;
@@ -106,27 +132,22 @@ header h2{
 .preamble h3{
 	font-family: 'Kaushan Script', cursive;
 	font-size: 50px;
-}
 
-/*
-#zen-explanation h3:first-child{
-	background: url("../img/clouds4.jpg");
-	padding-top: 60%;
-	text-align: right;
-	color: green;
-	padding-bottom: 5%;
-	padding-right: 30%;
-	font-size: 6em;
-	color: #567ab6;
-	font-family: 'Pirata One', cursive;
+	/*
+	background: red;
+	padding-top: 500px;
+	background-image: url('../clouds.jpg');
+	*/
 
 }
-*/
 
 #zen-explanation{
 	background: url("../img/tower.jpg");
 	background-size: 100% 100%;
 	height: 900px;
+	margin-top: 50%;
+	position: relative;
+	z-index: 12;
 	clear:both;	
 }
 
@@ -145,7 +166,7 @@ header h2{
 #zen-explanation p:nth-child(2){
 	text-align: justify;
 	margin-right: 60%;
-	margin-left: 2	%;
+	margin-left: 2%;
 	float: left;
 
 }
@@ -164,6 +185,10 @@ header h2{
 	background-position: 0px -100px;
 	height: 900px;
 	clear:both;	
+	font-weight: bolder;
+	position: relative;
+	z-index: 12;
+	margin-top: 50%;
 }
 
 #zen-participation h3{
@@ -184,24 +209,50 @@ header h2{
 
 #zen-participation p:nth-child(2){
 	text-align: justify;
-	margin-right: 30%;
-	margin-left: 45%;
-	margin-top: 5%;
+	margin-right: 20%;
+	margin-left: 35%;
+	margin-top: 15%;
 }
 
 #zen-participation p:nth-child(3){
-	text-align: justify;	
-	margin-right: 20%;
-	margin-left: 25%;	
-}
-
-#zen-participation p:nth-child(4){
 	text-align: justify;	
 	margin-right: 10%;
 	margin-left: 15%;	
 }
 
-@media all and (max-width:900px) and (min-width:600px) {
+#zen-participation p:nth-child(4){
+	text-align: justify;	
+	margin-right: 7%;
+	margin-left: 12%;	
+}
+
+
+
+
+#zen-benefits{
+	background: url("../img/tower.jpg");
+	background-size: 100% 100%;
+	height: 900px;
+
+	position: relative;
+	z-index: 12;
+	margin-top: 50%;
+	
+}
+
+#zen-benefits h3{
+	font-family: 'Pirata One';
+	font-size: 3em;
+	text-align: center;
+}
+
+#zen-benefits abbr{
+	color:green;
+}
+
+
+
+@media all and (max-width:900px){
 	.summary p{
 		font-size: 3em;
 	}
@@ -219,9 +270,10 @@ header h2{
 }
 
 
-@media all and (max-width:600px) and (min-width:400px) {
+@media all and (max-width:600px){
 	.summary p{
-		font-size: 3em;
+		font-size: 2em;
+		padding-top: 20px;
 	}
 
 	.preamble{
@@ -238,6 +290,25 @@ header h2{
 	header h1{
 		font-size: 2em;
 	}
+
+	#zen-participation p:nth-child(2){
+		text-align: justify;
+		margin-right: 10%;
+		margin-left: 10%;
+		margin-top: 10%;
+	}
+
+	#zen-participation p:nth-child(3){
+		text-align: justify;	
+		margin-right: 5%;
+		margin-left: 5%;	
+	}
+
+	#zen-participation p:nth-child(4){
+		text-align: justify;	
+		margin-right: 1%;
+		margin-left: 1%;	
+	}
 }
 
 
@@ -248,6 +319,10 @@ header h2{
 	}
 
 	.summary p{
+		font-size: 1em;
+	}
+
+	.preamble h3{
 		font-size: 2em;
 	}
 	.preamble p{
@@ -276,4 +351,13 @@ header h2{
 		text-align: center;
 		clear:both;
 	}
+
+	#zen-participation h3{
+		font-size: 2.5em;
+	}
+
+	#zen-participation p{
+		font-size: .8em;
+	}
+
 }

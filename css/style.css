@@ -3,7 +3,7 @@
 @import url('html5reset.css');
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Kaushan+Script);
 @import url(https://fonts.googleapis.com/css?family=Pirata+One);
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic);
 
 /* standard css for desktop browsers */
 body {
@@ -11,6 +11,25 @@ body {
 	background-color:#37f;
 
 }
+
+
+abbr {
+    position: relative;
+}
+
+abbr:hover::after {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    display: block;
+    padding: 1em;
+    background: #222;
+    content: attr(title);
+    font-weight: bold;
+    color:#37e;
+}
+
+
 
 .extra1 {
     position: fixed;
@@ -50,7 +69,8 @@ header h1{
 	float: left;
 	background: #3c4262;
 	color: #edcbc2 	;
-	font-family: Georgia;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800 italic;
     background-size: 49%;
     width: 20%;
     height: 600px;
@@ -107,7 +127,7 @@ header h2{
 	background-image: url("../img/road2g.jpg");
 	background-size: 100% 100%;
 	background-color: #000;
-	margin-top: 50%;
+	margin-top: 800px;
 	height: 800px;
 	z-index: 12;
 	position: relative;
@@ -124,7 +144,9 @@ header h2{
 
 .preamble p{
 	padding: 20px;
-	font-size: 3em;
+	font-size: 2em;
+	margin-right: 100px;
+	margin-left: 100px;
 
 	font-weight: bolder;
 }
@@ -132,6 +154,7 @@ header h2{
 .preamble h3{
 	font-family: 'Kaushan Script', cursive;
 	font-size: 50px;
+	padding-top: 100px;
 
 	/*
 	background: red;
@@ -145,7 +168,7 @@ header h2{
 	background: url("../img/tower.jpg");
 	background-size: 100% 100%;
 	height: 900px;
-	margin-top: 50%;
+	margin-top: 700px;
 	position: relative;
 	z-index: 12;
 	clear:both;	
@@ -188,7 +211,7 @@ header h2{
 	font-weight: bolder;
 	position: relative;
 	z-index: 12;
-	margin-top: 50%;
+	margin-top: 700px;
 }
 
 #zen-participation h3{
@@ -230,14 +253,16 @@ header h2{
 
 
 #zen-benefits{
-	background: url("../img/tower.jpg");
+	background: url("../img/volcan.jpg");
 	background-size: 100% 100%;
 	height: 900px;
 
+	color:white;
+	padding: 10px;
 	position: relative;
 	z-index: 12;
-	margin-top: 50%;
-	
+	margin-top: 700px;
+
 }
 
 #zen-benefits h3{
@@ -246,11 +271,61 @@ header h2{
 	text-align: center;
 }
 
-#zen-benefits abbr{
-	color:green;
+
+
+#zen-requirements{
+	background-size: 100% 100%;
+	height: 900px;
+
+	color:#112;
+	padding: 10px;
+	position: relative;
+	z-index: 12;
+	margin-top: 700px;
+	background-image: url("../img/wall.jpg");
+	/*
+	background: url("../img/wall.jpg"),linear-gradient(to top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 240px, rgba(255, 255, 255, 1) 290px),
+	;*/
+
 }
 
+#zen-requirements h3{
+	font-family: 'Pirata One';
+	font-size: 4em;
+	text-align: center;
+	margin-top: 60px;
+}
 
+#zen-requirements p{
+	margin-left: 50px;
+	margin-right: 50px;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+}
+
+#zen-requirements a{
+	text-decoration: none;
+	color: #999;
+}
+
+#zen-requirements p:nth-child(2){
+	margin-top: 300px;
+}
+
+/*
+footer{
+	background-image: url("../img/newyork.jpg");
+	background-size: 100% 100%;
+}
+*/
+
+footer{
+	background: #333;
+	height: 200px;
+	position: relative;
+	z-index: 12;
+}
 
 @media all and (max-width:900px){
 	.summary p{
@@ -267,6 +342,10 @@ header h2{
 	#zen-explanation p{
 		font-size: 1.7em;
 	}
+
+	#zen-requirements p:nth-child(2){
+	margin-top: 30px;
+}
 }
 
 

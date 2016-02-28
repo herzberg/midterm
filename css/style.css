@@ -27,6 +27,7 @@ abbr:hover::after {
     content: attr(title);
     font-weight: bold;
     color:#37e;
+    font-size: 1em;
 }
 
 
@@ -59,35 +60,34 @@ body div{
 }
 
 header{
-	z-index: 12;
 	position: relative;
+	z-index: 300;
+	width: 100%;
+	background-image: url("../img/world.jpg");
+	background-size: 100% 100%;
+	height: 800px;
 }
 
 
 header h1{
 	font-size: 3em;
 	float: left;
-	background: #3c4262;
-	color: #edcbc2 	;
+	background: rgba(100,150,160,.4);
+	color: rgb(160,160,160); 	;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 800;
     background-size: 49%;
     width: 20%;
     height: 600px;
     padding: 200px 1em 0 .5em;
-    clear:both;
-    position: static;
 }
 
 header h2{ 
-	z-index: 300;
-	width: 100%;
-	background-image: url("../img/world.jpg");
-	background-size: 100% 100%;
-	height: 600px;
+
 	padding-top: 200px;
 	font-size: 4em;
 	color: #eef;
+	padding-right: 80px;
 	text-align: right;
 }
 
@@ -253,7 +253,7 @@ header h2{
 
 
 #zen-benefits{
-	background: url("../img/volcan.jpg");
+	background: url("../img/newyork.jpg");
 	background-size: 100% 100%;
 	height: 900px;
 
@@ -262,13 +262,24 @@ header h2{
 	position: relative;
 	z-index: 12;
 	margin-top: 700px;
+	padding-left: 25%;
+	padding-right: 25%;
 
+
+}
+
+#zen-benefits p{
+	font-size: 2em;
+	background: rgba(100,100,100,.5);
+	padding: 20px;
+	margin-top: 20px;
 }
 
 #zen-benefits h3{
 	font-family: 'Pirata One';
 	font-size: 3em;
 	text-align: center;
+	margin-top: 100px;
 }
 
 
@@ -283,9 +294,8 @@ header h2{
 	z-index: 12;
 	margin-top: 700px;
 	background-image: url("../img/wall.jpg");
-	/*
-	background: url("../img/wall.jpg"),linear-gradient(to top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 240px, rgba(255, 255, 255, 1) 290px),
-	;*/
+	/*background: linear-gradient(to top, url("../img/wall.jpg") 0, rgba(255, 255, 255, 1) 240px, rgba(255, 255, 255, 1) 290px)*/
+	;
 
 }
 
@@ -321,7 +331,7 @@ footer{
 
 .design-selection, .design-archives, .zen-resources {
 	color: white;
-	background: #999;
+	background: rgba(200,200,200,.8);
 	text-align: center;
 	padding: 10px;
 	z-index: 12;

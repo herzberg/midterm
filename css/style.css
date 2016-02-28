@@ -315,16 +315,68 @@ header h2{
 
 /*
 footer{
-	background-image: url("../img/newyork.jpg");
-	background-size: 100% 100%;
+
 }
 */
 
+.design-selection, .design-archives, .zen-resources {
+	color: white;
+	background: #999;
+	text-align: center;
+	padding: 10px;
+	z-index: 12;
+	position: absolute;
+	height: 200px;
+	width: 250px;
+}
+
+.design-selection a, .design-archives a, .zen-resources a{
+	text-decoration: none;
+	color:#eee;
+}
+
+.design-selection a:hover, .design-archives a:hover, .zen-resources a:hover{
+	color:#000;
+}
+
+.design-selection{
+	padding-bottom: 30px;
+	bottom: -2300px;
+	left: 50px;
+}
+
+.design-archives{
+	padding-bottom: 30px;
+	margin-right: 30px;
+	bottom: -500px;
+	right: -20px;
+}
+
+.zen-resources{
+	padding-bottom: 30px;
+	bottom: -3800px;
+	right: 50px;
+}
+
+
+
 footer{
 	background: #333;
-	height: 200px;
 	position: relative;
 	z-index: 12;
+	text-align: center;
+	padding: 10px;
+	padding-bottom: 30px;
+	bottom: 0;
+	clear: all;
+	height: 60px;
+}
+
+footer a{
+	padding: 5px;
+	text-decoration: none;
+	color:#ddd;
+	font-size: 2em;
 }
 
 @media all and (max-width:900px){

@@ -70,7 +70,7 @@ header h1{
 	background: #3c4262;
 	color: #edcbc2 	;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 800 italic;
+	font-weight: 800;
     background-size: 49%;
     width: 20%;
     height: 600px;
@@ -368,7 +368,6 @@ footer{
 	padding: 10px;
 	padding-bottom: 30px;
 	bottom: 0;
-	clear: all;
 	height: 60px;
 }
 

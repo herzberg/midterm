@@ -108,13 +108,16 @@ header h2{
 .summary p{
 	color: black;
 	padding: 30px;
-	padding-top: 40px;
 	font-size: 5em;
 	font-weight: bolder;
+	background: rgba(100,100,100,.4);
+	text-align: center;
+	padding-left: 20%;
+	padding-right: 20%;
 }
 
 .summary p:first-child{
-	padding-top: 200px;
+	padding-top: 20px;
 }
 
 .summary a{
@@ -187,6 +190,8 @@ header h2{
 	padding: 10px;	
 }
 
+
+
 #zen-explanation p:nth-child(2){
 	text-align: justify;
 	margin-right: 60%;
@@ -203,12 +208,12 @@ header h2{
 	position: absolute;
 }
 
+
 #zen-participation{
-	background: url("../img/pyr2.jpg") no-repeat;
+	background: url("../img/bridge.jpg") no-repeat;
 	background-size: 100% 100%;
 	background-position: 0px -100px;
 	height: 900px;
-	clear:both;	
 	font-weight: bolder;
 	position: relative;
 	z-index: 12;
@@ -220,17 +225,23 @@ header h2{
 	text-align: center;
 	padding: 10px;
 	padding-top: 50px;
+	color: black;
+	background: rgba(100,100,100,.7);
 }
 
 
 #zen-participation p{
-	font-size: 1em;
-	padding: 10px;	
+	font-size: 1.4em;
+	padding: 25px;
+	background: rgba(100,100,100,.7);	
 	text-align: center;
 	color: black;
 	font-weight: bolder;
 }
 
+
+/*
+diff sizes for pyrimiad
 #zen-participation p:nth-child(2){
 	text-align: justify;
 	margin-right: 20%;
@@ -250,7 +261,7 @@ header h2{
 	margin-left: 12%;	
 }
 
-
+*/
 
 
 #zen-benefits{
@@ -313,6 +324,7 @@ header h2{
 	color: white;
 	font-weight: bold;
 	padding: 10px;
+	background: rgba(100,100,100,.8);
 }
 
 #zen-requirements a{
@@ -337,7 +349,7 @@ footer{
 	position: absolute;
 	height: 800px;
 	width: 20%;
-	padding-left: 5%;
+	padding-left: ;
 	z-index: 11;
 }
 
@@ -392,15 +404,17 @@ footer a{
 	}
 	.preamble p{
 		font-size: 1.7em;
+		padding: 10px;
 	}
+
 
 	#zen-explanation p{
 		font-size: 1.7em;
 	}
 
 	#zen-requirements p:nth-child(2){
-	margin-top: 30px;
-}
+		margin-top: 30px;
+	}
 }
 
 
@@ -414,7 +428,12 @@ footer a{
 		padding-top: 10px;
 	}
 	.preamble p{
-		font-size: 1.7em;
+		font-size: 1.4em;
+	}
+
+	.preamble h3{
+		padding-top: 20px;
+		font-size: 2.2em;
 	}
 
 	#zen-explanation p{
@@ -424,6 +443,9 @@ footer a{
 	header h1{
 		font-size: 2em;
 	}
+
+	/*
+	diff sizes for pyrimiad
 
 	#zen-participation p:nth-child(2){
 		text-align: justify;
@@ -443,12 +465,26 @@ footer a{
 		margin-right: 1%;
 		margin-left: 1%;	
 	}
+	*/
+
+
+	#zen-participation p{
+		font-size: .9em;
+	}
 
 	#zen-benefits p{
 		font-size: .9em;
 		background: rgba(100,100,100,.5);
 		padding: 10px;
 		margin-top: 10px;
+	}
+
+	#zen-requirements h3{
+		margin-top: 3px;
+	}
+
+	#zen-requirements p{
+		font-size: .9em;
 	}
 }
 

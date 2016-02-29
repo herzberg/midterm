@@ -219,13 +219,14 @@ header h2{
 	position: relative;
 	z-index: 12;
 	margin-top: 700px;
+
 }
 
 #zen-participation h3{
 	font-size: 4em;
 	text-align: center;
 	padding: 10px;
-	padding-top: 50px;
+	margin-top: 50px;
 	color: black;
 	background: rgba(100,100,100,.7);
 }
@@ -238,6 +239,8 @@ header h2{
 	text-align: center;
 	color: black;
 	font-weight: bolder;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 
@@ -350,7 +353,8 @@ footer{
 	padding: 10px;
 	padding-left: 20px;
 	z-index: 11;
-
+	padding-top: 100px;
+	font-size: 1.5em;
 }
 
 .design-selection li, .design-archives li, .zen-resources li{
@@ -491,8 +495,42 @@ footer a{
 	}
 
 	#zen-requirements p{
-		font-size: .9em;
+		font-size: .8em;
+		margin-left: 5px;
+		margin-right: 5px;
 	}
+
+	.design-selection, .design-archives, .zen-resources {
+		color: #111;
+		background: rgba(200,200,200,.8);
+		position: absolute;
+		height: auto;
+		min-height: 300px;
+		width: 100%;
+		padding: 10px;
+		padding-left: 20px;
+		z-index: 11;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size: 1.5em;
+	}
+
+	.design-selection{
+		bottom: -2180px;
+	}
+
+	.design-archives{
+		bottom: -5340px;
+	}
+
+	.zen-resources{
+		bottom: -3790px;
+	}
+
+
+
+
+
 }
 
 

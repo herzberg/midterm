@@ -13,6 +13,10 @@ body {
 	width: 100%;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 
 abbr {
@@ -512,7 +516,7 @@ footer a{
 		z-index: 11;
 		padding-top: 20px;
 		padding-bottom: 20px;
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 
 	.design-selection{
@@ -535,9 +539,11 @@ footer a{
 
 
 /* override css for mobile browsers */
-@media all and (max-width:400px) {
+@media all and (max-width:375px) {
 	body {
 		font-size:1em;
+		max-width: 375px;
+		background-image: url("../img/clouds6.jpg");
 	}
 
 	.summary p{

@@ -9,7 +9,7 @@
 body {
 	background-image: url("../img/clouds5.jpg");
 	background-color:#37f;
-	background-size: 100% 100%;
+	background-size:  100%;
 
 }
 
@@ -450,6 +450,13 @@ footer a{
 		margin-right: 1%;
 		margin-left: 1%;	
 	}
+
+	#zen-benefits p{
+		font-size: .9em;
+		background: rgba(100,100,100,.5);
+		padding: 10px;
+		margin-top: 10px;
+	}
 }
 
 
@@ -482,15 +489,8 @@ footer a{
 	    padding: 100px 0.5em 0 0.5em;
 	}
 
-	header h2{ 
-		width: 100%;
-		background-image: url("../img/world.jpg");
-		background-size: 100% 100%;
-		height: 600px;
+	header h2{
 		font-size: 4em;
-		color: #eef;
-		text-align: center;
-		clear:both;
 	}
 
 	#zen-participation h3{

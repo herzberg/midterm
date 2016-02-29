@@ -11,6 +11,7 @@ body {
 	background-color:#37f;
 	background-size:  100%;
 	width: 100%;
+	position: relative;
 }
 
 html, body {
@@ -375,15 +376,15 @@ footer{
 }
 
 .design-selection{
-	bottom: -2380px;
+	top: 2280px;
 }
 
 .design-archives{
-	bottom: -5590px;
+	top: 5490px;
 }
 
 .zen-resources{
-	bottom: -3990px;
+	top: 3890px;
 }
 
 
@@ -520,15 +521,15 @@ footer a{
 	}
 
 	.design-selection{
-		bottom: -2180px;
+		top: 2480px;
 	}
 
 	.design-archives{
-		bottom: -5340px;
+		top: 5740px;
 	}
 
 	.zen-resources{
-		bottom: -3790px;
+		top: 4090px;
 	}
 
 

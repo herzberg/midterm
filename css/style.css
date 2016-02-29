@@ -543,6 +543,7 @@ footer a{
 	body {
 		font-size:1em;
 		max-width: 375px;
+		margin: 0;
 		background-image: url("../img/clouds6.jpg");
 	}
 
